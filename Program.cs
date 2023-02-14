@@ -21,6 +21,10 @@ namespace User_Ragistration
             Regex emails = new Regex(User_data.Email);
             Console.WriteLine(emails.IsMatch(Console.ReadLine()));
 
+            Console.WriteLine("Enter Your mobile numbur(+91):");
+            Regex mob = new Regex(User_data.MobNumValidation);
+            Console.WriteLine(mob.IsMatch(Console.ReadLine()));
+
 
         }
     }
