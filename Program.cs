@@ -26,6 +26,11 @@ namespace User_Ragistration
             Console.WriteLine(mob.IsMatch(Console.ReadLine()));
 
 
+            Console.WriteLine("Enter Your Pasward..:\nplease Enter at least minimum 8 Character..");
+            Regex pass = new Regex(User_data.User_password);
+            Console.WriteLine(pass.IsMatch(Console.ReadLine())); 
+
+
         }
     }
 }
