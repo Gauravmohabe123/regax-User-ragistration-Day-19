@@ -12,11 +12,16 @@ namespace User_Ragistration
             Console.WriteLine("\nEnter User Name:");
             Regex user = new Regex(User_data.UserName);
             Console.WriteLine(user.IsMatch(Console.ReadLine()));
-            Console.WriteLine("Done");
 
             Console.WriteLine("User Last Name:");
             Regex last = new Regex(User_data.UserLastName);
-           Console.WriteLine(last.IsMatch (Console.ReadLine()));
+            Console.WriteLine(last.IsMatch(Console.ReadLine()));
+
+            Console.WriteLine("User Enter valid E-mail:");
+            Regex emails = new Regex(User_data.Email);
+            Console.WriteLine(emails.IsMatch(Console.ReadLine()));
+
+
         }
     }
 }

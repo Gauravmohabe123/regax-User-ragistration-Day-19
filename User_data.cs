@@ -8,5 +8,7 @@ namespace User_Ragistration
     {
         public static string UserName = @"^[A-Z][a-z]{3,}$";
         public static string UserLastName = @"^[A-Z][a-z]{3,}$";
+        public static string Email = @"^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$";
+
     }
 }
