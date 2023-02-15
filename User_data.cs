@@ -9,7 +9,7 @@ namespace User_Ragistration
     {
         public static string UserName = @"^[A-Z][a-z]{3,}$";
         public static string UserLastName = @"^[A-Z][a-z]{3,}$";
-        public static string Email = @"^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$";
+        public static string Email = @"[a-z]{3,9}.?[a-z0-9]{3,8}[@][a-z]{3,8}[\.](com|org|in|net)$";
         public static string MobNumValidation = @"^[+]91[0-9]{10}$";
         public static string User_password = @"^(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%&*-]).{8,}$";
 
