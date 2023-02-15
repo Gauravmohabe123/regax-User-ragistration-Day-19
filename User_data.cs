@@ -11,7 +11,7 @@ namespace User_Ragistration
         public static string UserLastName = @"^[A-Z][a-z]{3,}$";
         public static string Email = @"^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$";
         public static string MobNumValidation = @"^[+]91[0-9]{10}$";
-        public static string User_password = @"^(?=.*[A-Z])(?=.*[0-9]).{8,}$";
+        public static string User_password = @"^(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%&*-]).{8,}$";
 
         public void Datacheck() 
         {
@@ -31,7 +31,7 @@ namespace User_Ragistration
             Regex mob = new Regex(User_data.MobNumValidation);
             Console.WriteLine(mob.IsMatch(Console.ReadLine()));
 
-            Console.WriteLine("Enter Your Pasward..\nplease Enter at least 1 Uppercase\nand 1 numreic numbur \nand minimum 8 Character..");
+            Console.WriteLine("Enter Your Pasward..\nplease Enter at least 1 Uppercase\nand 1 numreic numbur\nand one special numbur \nand minimum 8 Character..");
             Regex pass = new Regex(User_data.User_password);
             Console.WriteLine(pass.IsMatch(Console.ReadLine()));
 
